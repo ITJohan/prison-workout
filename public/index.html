@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prison workout</title>
+</head>
+<body>
+
+  <h1>Prison workout 🤸‍♂️</h1>
+
+  <section id="whenSignedOut">
+    <button id="signInBtn">Sign in with Google</button>
+  </section>
+  
+  <section id="whenSignedIn" hidden="true">
+    <div id="userDetails"></div>
+    <button id="signOutBtn">Sign out</button>
+  </section>
+  
+  <section>
+    <ul id="thingsList">
+
+    </ul>
+    <button id="createThing">Create Random Thing</button>
+  </section>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyAkqtWKkB5-rr6_bWBEq0hQfov70kntzxc",
+      authDomain: "prison-workout.firebaseapp.com",
+      databaseURL: "https://prison-workout.firebaseio.com",
+      projectId: "prison-workout",
+      storageBucket: "prison-workout.appspot.com",
+      messagingSenderId: "680868335032",
+      appId: "1:680868335032:web:6f8c11e50e1499c6ac934d",
+      measurementId: "G-ZJVYWYJHTE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
