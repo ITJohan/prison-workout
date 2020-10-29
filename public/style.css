@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 0.8rem;
+}
+
+#form {
+  display: grid;
+  grid-template: repeat(5, 1fr) / auto repeat(3, 3rem);
+  gap: 1rem 1rem;
+  grid-template-areas: 
+  "x a b c"
+  "d e f g"
+  "h i j k"
+  "l m n o"
+  "p q r s"
+  "t t t t";
+  max-width: 30rem;
+}
+
+#set-1-header { grid-area: a; }
+#set-2-header { grid-area: b; }
+#set-3-header { grid-area: c }
+
+#exercise-1-name { grid-area: d; }
+#exercise-1-set-1-input { grid-area: e; }
+#exercise-1-set-2-input { grid-area: f; }
+#exercise-1-set-3-input { grid-area: g; }
+
+#exercise-2-name { grid-area: h; }
+#exercise-2-set-1-input { grid-area: i; }
+#exercise-2-set-2-input { grid-area: j; }
+#exercise-2-set-3-input { grid-area: k; }
+
+#exercise-3-name { grid-area: l; }
+#exercise-3-set-1-input { grid-area: m; }
+#exercise-3-set-2-input { grid-area: n; }
+#exercise-3-set-3-input { grid-area: o; }
+
+#exercise-4-name { grid-area: p; }
+#exercise-4-set-1-input { grid-area: q; }
+#exercise-4-set-2-input { grid-area: r; }
+#exercise-4-set-3-input { grid-area: s; }
+
+#submit-button { grid-area: t }
+
+#sign-in-btn, #sign-out-btn {
+  margin: 1rem;
+}
